@@ -42,10 +42,10 @@ int main () {
                 "drink to receive a lethal dose of artificial sweetener,\n"
                 "based on your weight. Please input the weight(lbs.) at which you\n"
                 "will stop dieting."<<endl;
-                while(!(cin >> aftrMss)){                               //this block of code was copied from 
-		cin.clear();                                            //http://www.cplusplus.com/forum/beginner/21595/
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');    //to solve the problem of infinite output loop
-		cout << "Invalid input.  Try again: ";                  //when given an invalid input
+                while(!(cin >> aftrMss)){                               
+		cin.clear();                                            
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');    
+		cout << "Invalid input.  Try again: ";                  
 	}
 	cout << "You entered: " << aftrMss <<" lbs." << endl;	
         
@@ -60,6 +60,7 @@ int main () {
             //Output Located Here
         cout<<"The lethal amount of soda is "<<mSoda<<"g, or "<<cans<<" cans"<<endl;
         
+        cout<<endl;
         cout<<"Would you like to run the program again? y/n"<<endl;
         cin>>ans;
         while(ans != 'y' && ans !='n' && ans!= 'Y' && ans!= 'N'){
